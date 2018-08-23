@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <title>css样式操作</title>  
+   <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+   <meta http-equiv="refresh" content="2"/>
+   <style type="text/css">
+       #a{
+	       color:black;
+		   font-size:25pt;
+		   background:silver;
+	   }
+	   label,span{
+	       border:1px solid black;
+		   font-size:20pt;
+		   color:red;
+	   }
+	   p span{
+	      border:none;
+	      color:#6633ff;
+		  font-size:35pt;
+		  background:#ff99ff;
+	   }
+	   
+	   a:link{
+	       color:red;   
+	   }
+	   a:hover{
+	       color:red;
+		   font-size:30pt;
+	   }
+	   a:active{
+	       color:#33ff99;
+		   font-size:100;
+	   }
+       #a a{
+	      color:red;
+	   }
+    </style>
+ </head>
+ <body>
+    <p id="a">Id选择器<a href="#">hello</a></p>
+	<label>label文本</label>&nbsp;&nbsp<span>span文本</span>
+	<p>一周排行<span>榜</span></p>
+	<a href="#">使用伪类选择器</a>
+ </body>
+</html>

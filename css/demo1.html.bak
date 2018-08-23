@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <title>css样式操作</title>  
+   <meta http-equiv="refresh" content="1"/>
+   <style type="text/css">
+      h1{
+	     color:blue;
+		 font-size:20pt;
+	  }
+	  h4{
+	  color:red;
+	  font-size:20pt;
+	  }
+	  .a{
+	      border:1px solid red;
+		  width:300px;
+		  height:30px
+		  }
+		  #aa{
+	      border:1px solid red;
+		  width:300px;
+		  height:30px
+		  }
+   </style>
+   <link rel="stylesheet" href="aa.css" type="text/css"/>
+ </head>
+ <body>
+   <p style="color:red;font-size:25pt">段落文本(P):&nbsp;&nbsp;使用内联样式</p>
+   <h1>一级标题(h1):使用内部样式表</h1>
+   <h2>二级标题(h2):使用外部样式表</h2>
+   <p style="color:#33ffcc;font-size:31pt">欢迎来到我赢职场</p>
+
+
+   <h4>h4元素选择器</h4>
+   <div class="a">类选择器</div>
+   <br/><br/><br/>
+   <div id="aa">id选择器</div>
+ </body>
+</html>

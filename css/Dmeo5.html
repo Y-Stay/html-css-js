@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <title>css样式操作</title>  
+   <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+   <style type="text/css">
+        ul{
+		   list-style:none;
+		   margin:0px;
+		   padding:0px;
+		}
+		a{
+		   text-decoration:none;
+		}
+		.main,.hmain {
+		     background-image:url(title.gif);
+			 background-repeat:repeat-x;
+			 width:120;
+		}
+		.main a,.hmain a{
+		color:white
+		}
+        .main li a,.hmain li a{
+		color:black;
+		background-image:none;
+		}      
+		.main ul,.hmain ul{
+		background-color:#FFCC99;
+		}
+		.hmain{
+		   float:left;
+		}
+		.main ul{
+		 display:none;
+		}
+    </style>
+ </head>
+ <body>
+    <ul>
+	   <li class="main"><a href="#">菜单项1</a>
+	       <ul>
+		    <li><a href="#">子菜单项1-1</a></li>
+	        <li><a href="#">子菜单项1-2</a></li>
+			 <li><a href="#">子菜单项1-3</a></li>
+		   </ul>
+	   </li>
+	     
+	   <li class="main"><a href="#">菜单项2</a>
+	   <ul>
+		    <li><a href="#">子菜单项2-1</a></li>
+	        <li><a href="#">子菜单项2-2</a></li>
+		   </ul></li>
+	   <li class="main"><a href="#">菜单项3</a>
+	        <ul>
+		    <li><a href="#">子菜单项3-1</a></li>
+	        <li><a href="#">子菜单项3-2</a></li>
+			 <li><a href="#">子菜单项3-3</a></li>
+		   </ul>
+	   </li>
+	</ul>
+
+
+	<br/><br/><br/>
+
+
+	<ul>
+	   <li class="hmain"><a href="#">菜单项1</a>
+	       <ul>
+		    <li><a href="#">子菜单项1-1</a></li>
+	        <li><a href="#">子菜单项1-2</a></li>
+			 <li><a href="#">子菜单项1-3</a></li>
+		   </ul>
+	   </li>
+	     
+	   <li class="hmain"><a href="#">菜单项2</a>
+	   <ul>
+		    <li><a href="#">子菜单项2-1</a></li>
+	        <li><a href="#">子菜单项2-2</a></li>
+		   </ul></li>
+	   <li <li class="hmain"><a href="#">菜单项3</a>
+	        <ul>
+		    <li><a href="#">子菜单项3-1</a></li>
+	        <li><a href="#">子菜单项3-2</a></li>
+			 <li><a href="#">子菜单项3-3</a></li>
+		   </ul>
+	   </li>
+	</ul>
+ </body>
+</html>
