@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <title>css样式操作</title>  
+   <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+   <style type="text/css">
+      #mywin{
+	      border:2px solid red;
+		  width:300px;
+		  height:200px;
+		  position:absolute;
+          left: 500px;
+		  top:100;
+	  }
+	  #title{
+	     background:red;
+	  }
+	  #content{
+	     padding-left: 90px;
+		 padding-top: 70px;
+	  }
+	  #close{
+	     padding-left: 155px
+	  }
+   </style>
+   <script>
+       function goback(){
+	     // history.go(-1);
+		  history.back();
+	   }
+   </script>
+ </head>
+ <body>
+    <br/>
+	<br/>
+	<a href="javascript:history.go(-1)">go back</a>
+	<br/>
+	<a href="javascript:goback()">go back use function</a>
+	<br>
+	
+    <div id="mywin">
+	  <div id="title">
+	     我是窗体的标题栏
+		  <span id="close">
+	  X
+	  </span>
+	  </div>
+	 
+	  <div id="content">
+	   我是一个窗口
+	   </div>
+	</div>
+ </body>
+</html>

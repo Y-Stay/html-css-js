@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <title>节点的操作</title>  
+    <script>
+	 function removeImage(){
+	   var image1=document.getElementById("image1");
+	   document.body.removeChild(image1);
+	 }  
+	 function addImage(){
+	   var newimage=document.createElement("img");
+	   newimage.setAttribute("src","2.jpg");
+	   
+	   document.body.appendChild(newimage);
+	 }  
+	 function insertImage(){
+	   var newImage2=document.createElement("img");
+	   newImage2.setAttribute("src","3.jpg");
+	   var newImage3=document.getElementById("image2");
+	   document.body.insertBefore(newImage2,newImage3);
+	 }  
+	 function replaceImage(){
+	     var newImage2=document.getElementById("image2");
+		 var newImage4=document.createElement("img");
+		 newImage4.setAttribute("src","4.jpg");
+		 document.body.replaceChild(newImage4,newImage2);
+	 }
+	</script>
+ </head>
+ <body>
+    <input type="button" value="增加图片" onclick="addImage()"/>
+    <input type="button" value="删除图片" onclick="removeImage()"/>
+	<input type="button" value="插入图片" onclick="insertImage()"/>
+	<input type="button" value="代替节点" onclick="replaceImage()"/>
+	<br>
+	<img src="1.jpg" id="image1"/>
+	<img src="2.jpg" id="image2"/>
+ </body>
+</html>

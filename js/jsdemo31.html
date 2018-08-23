@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <title>事件操作</title>  
+   <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+   <script>
+   setTimeout("g(obj)",2000);
+     function f(obj){
+		
+	   obj.id="aa";
+	   x();
+	 }
+	 function x(){
+	   var aa=document.getElementById("aa");
+	   aa.innerHTML="你好";	  
+	 }
+	 function g(obj){
+		  
+	   obj.id="bb";
+	 }
+   </script>
+   <style>
+    #aa{
+	  font-size:30px;
+	  color:red;
+	  text-decoration: none;
+	}
+	#bb{
+	  font-size:20px;
+	  color:black;
+	  text-decoration: none;
+	}
+   </style>
+ </head>
+ <body>
+   <a href="#" onmouseover="f(this)" onmouseout="g(this)">aaa</a>
+ </body>
+</html>

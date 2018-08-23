@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <title>String</title>  
+    <script>
+	     var s="hello";
+		 var s1=new String("world");
+		 alert(s+","+s1);
+         var mail="xxx@163.com";
+		 var index=mail.indexOf("@");
+		 //alert(mail.substring(0,index);
+		 //alert(mail.substr(index+1));
+	</script>
+ </head>
+ <body>
+ </body>
+</html>

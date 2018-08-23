@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <title>事件操作</title>  
+   <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+   <script>
+     //边界符 js中直接定义正则表达式需要边界符//
+	 var re=/abc/;
+	 document.write(re.test("xxxxc")+","+re.test("ddddabc")+","+re.test("abc")+"<br>");
+	 
+	 re=/\/abc\//;//匹配/abc/
+	 document.write(re.test("/abc/")+","+re.test("abcabc/")+"<br>");
+	 //不需要边界符的情况
+	 var regex=new RegExp("abc");
+	 var regex1=new RegExp("\/abc\/");
+	 document.write(regex.test("abc")+","+regex.test("dsaf")+"<br>");
+     //g修正符 可以找到所有匹配的 没有g只找第一个
+	 //i 不区分大小写 可以与g同时使用
+	 var reg1=/abc/gi;
+	 var str="abcddabcxxabcllaBCiiAbCxdf";
+	 var t=str.match(reg1);
+	 for(var i=0;i<t.length;i++){
+	    document.write(t[i]+",");
+	 }
+   </script>
+ </head>
+ <body>
+
+ </body>
+</html>

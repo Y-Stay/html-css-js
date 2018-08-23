@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <title>表格的操作</title>  
+   <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <script>
+	    function addRow(){
+		   var mytable=document.getElementById("mytable");
+		   //alert(mytable.rows.length);
+		   //alert(mytable.cells.length);//ie支持firefox不支持
+		   var newRow=mytable.insertRow(mytable.rows.length);
+		   var cells0=newRow.insertCell(0);
+		   cells0.innerHTML="00005";
+		   var cells1=newRow.insertCell(1);
+		   cells1.innerHTML="田七";
+		}
+		function deleteRow(){
+		  var table=document.getElementById("mytable");
+		  table.deleteRow(table.rows.length-1)
+		}
+	</script>
+ </head>
+ <body>
+   <table border="1" align="center" width="300" id="mytable">
+      <tr><td>学号</td><td>姓名</td></tr>
+	  <tr><td>00001</td><td>张三</td></tr>
+	  <tr><td>00002</td><td>李四</td></tr>
+	  <tr><td>00003</td><td>王五</td></tr>
+	  <tr><td>00004</td><td>赵柳</td></tr>
+   </table>
+   <br/>
+   <input type="button"  value="增加一行" onclick="addRow()"/>
+   <input type="button"  value="删除一行" onclick="deleteRow()"/>
+ </body>
+</html>

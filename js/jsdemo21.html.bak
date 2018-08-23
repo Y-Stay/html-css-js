@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <title>String</title>  
+    <script>
+	   function f()
+	   {
+	      var ahref=document.getElementById("aa");
+		  //ahref.href="http://www.baidu.com";
+		  //ahref.innerHTML="百度";
+		  ahref.setAttribute("href","http://www.baidu.com");
+		  //ahref.setAttribute("innerHTML","百度");没有这个属性必须是标签内的属性才能设置
+		  alert(ahref.getAttribute("href"));
+	   }
+	    function f1()
+	   {
+	      var ahref=document.getElementById("bb");
+		 if(ahref.getAttribute("src")=="1.jpg"){
+		  ahref.setAttribute("src","2.jpg");
+		  alert(ahref.src);
+		  alert(ahref.getAttribute("src"));
+		 }
+		else if(ahref.getAttribute("src")=="2.jpg")
+		   ahref.setAttribute("src","1.jpg");		 
+	   }
+	</script>
+
+ </head>
+ <body>
+    <img src="1.jpg" id="bb" onclick="f1()"/>
+    <a href="http://www.163.com" id="aa">去163</a>
+	<input type="button"  value="改变连接" onclick="f()"/>
+	<input type="button"  value="改变图片" onclick="f1()"/>
+ </body>
+</html>

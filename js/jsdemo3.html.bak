@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <title>jsdemo1</title>
+   <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+   <script type="text/javascript">
+     // var a=10;
+	 /* var b="helloWorld";
+	  var c=true;
+	  alert(typeof(a));
+	  alert(typeof(b));
+	  alert(typeof(c));
+	  alert(typeof(d));*/
+	  var x=1,y=2,z=8;
+	  alert(x+y+z);
+	  alert(y%z);
+	  alert(y*z);
+	  if(x>10)
+	    document.write("hello");
+		else
+		document.write("world");
+    </script>
+ </head>
+ <body>
+ 
+ </body>
+</html>

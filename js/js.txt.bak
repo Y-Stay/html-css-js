@@ -1,0 +1,122 @@
+一、javaScript语法基础
+1.javaScript(js)有以下三部分组成
+  ECMAScript(基本语法、变量、语句、控制、数组、函数)
+  BOM
+  DOM
+2.<script>嵌套在文件中  
+   导入外部的js  jsdemo2.html 1.js
+3.javaScript的基本语法
+  3.1 数据类型、变量
+      数字类型  number
+      字符串类型  string
+      boolean 布尔类型
+      undefined 未声明类型
+      null 类型
+      object 、函数、数组、
+
+      通过var关键字声明变量
+      typeof(变量名) 可以查看类型
+  3.2基本的运算符和java类似
+     +、-、*、/、%
+     逻辑 && || !
+      注释也一样
+  3.3控制语句
+      条件语句 if/if else/if else if elseif...
+      循环结构 for/while/do while
+
+4.javaScript的函数
+   常用函数
+   alert(内容) 弹出框
+   prompt 输入框
+   parseInt
+   parseFloat
+   isNaN 判断是否为非数字
+  自定义函数
+     function(参数)
+     {
+       函数实现
+     }
+     其实对于js而言，函数声明无参数，调用是也可以传递参数
+                             有参数，也未必要传递参数
+       对于一些特殊情况可以通过arguments[0] 来访问参数
+     函数的参数也可以是一个函数
+   document.write("*");//输出内容到网页
+5.window对象的常用属性和方法以及事件
+  window对象访问方法时window.可以省略
+  常用的属性：screen,document、history、location
+  常用的方法：alert()、prompt()、open()    jsdemo8.html
+               close() IE中可以关闭当前窗口，firefox中不可以  jsdemo9.html
+  setTimeout(函数，时间) 延迟这个时间调用函数 clearTimeout  jsdemo10.html
+  setInteval(函数，时间) 每隔多少秒调用函数  clearInterval
+  Date对象  jsdemo11.html
+
+  完成时钟的操作 jsdemo12.html
+     使用文本框中放入时间，每秒刷新即可；
+     javaScript脚本可以放在body结束之前，这样可以提高效率
+
+  事件：onload jsdemo13.html
+
+
+6.BOM编程
+  a.document
+      document.属性访问方式访问表单元素 jsdemo14.html 
+      .getElementById   jsdemo14.html
+
+     .getElementByName .getElementByTagName  jsdemo15
+  b.history
+     go(1)、go(-1)/back()、forward()  jsdemo16
+  c.location   jsdemo16
+     location.href("要去的网页");
+  d.改变超链接  jsdemo16-1.html
+  e.全选和全不选  jsdemo16-1.html
+  e.打开和隐藏层 jsdemo17.html   层.style.display="block" or "none"
+    图片的显示和隐藏   jsdemo17.html
+7.string/数组
+   BOM4 08:12
+   7.1 string jsdemo18.html
+   7.2 Array 声明 排序 遍历 jsdemo19.html
+             类似二维数组的声明 以及数组下标可以是汉字 jsdemo20.html
+8.DOM编程
+  8.1 标签属性的访问 jsdemo21.html
+              BOM                            DOM
+     获取  标签对象.属性   ======》标签对象.getAttribute("属性")
+     设置  标签对象.属性=值======》 标签对象.setAttribute("属性","值")
+  8.2增加节点、创建节点、移除节点、子节点的操作 jsdemo22.html
+     appendChild()/document.createElement()/removeChild()
+  8.3关于表格的操作
+      table.rows----rows属性，是一个数组
+      var newROw=table.insertRow(n);在第几行后插入一行
+      var cell0=newRow.insertCell(n);这一行的第几个单元格
+      cell0.innerHTML="内容";设置单元格内容；
+9.事件的操作
+   onload窗体加载事件   jsdemo25.html jsdemo24.html
+   onclick点击事件  jsdemo26.html 
+   obj.事件=function(){}   jsdemo27.html
+   事件event
+   键盘事件 keyCode  jsdemo28.html
+        光标左 37 上38 右39 下40
+	esc 27  回车 13
+   事件的冒泡机制 jsdemo30.html
+
+   常用的事件：onload 窗体/onchange 下拉框/onclick
+               onmouseout/onmouseover/onblur失去焦点/onfocus获得焦点
+               onmouseout/onmouseover jsdemo31.ht
+10.级联下拉框  jsdemo32.html
+      下拉框的常用事件 onchange事件
+      下拉框的常用属性 value,selectedIndex,options
+      Option对象 var option=new Option(显示的文字，属性)
+      属性option.add(opiton) 添加option
+11.表单验证  jsdemo24.html
+    表单的提交 onsubmit onsubmit="return boolean值" 
+    只有这个值是true 表单才会进行提交
+
+    默认提交需要用submit按钮    jsdemo33.html
+    如果想要用普通按钮提交，需要调用submit方法
+
+    表单验证就是对输入不合法的元素给出提示，重新输入 jsdemo34.html
+    并取消表单的提交即可（其实就是正则表达式的操作）
+    focus() 获得交掉
+    select() 被选中
+    
+
+

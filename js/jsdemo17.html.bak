@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <title>css样式操作</title>  
+   <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+   <style type="text/css">
+      #mywin{
+	      border:2px solid red;
+		  width:300px;
+		  height:200px;
+		  position:absolute;
+          left: 500px;
+		  top:100;
+		  display:none;
+	  }
+	  #title{
+	     background:red;
+	  }
+	  #content{
+	     padding-left: 90px;
+		 padding-top: 70px;
+	  }
+	  #close{
+	     padding-left: 155px
+	  }
+	  #img{
+	     display:none;
+	  }
+   </style>
+   <script>
+       function closWin(){
+	       var win=document.getElementById("mywin");
+		   win.style.display="none";
+	   }
+	   function openWin(){
+	       var win=document.getElementById("mywin");
+		   win.style.display="block";
+	   }
+	   function displayImg(){
+	       var img=document.getElementById("img");
+		   var text=document.getElementById("text");
+		   if(text.innerHTML=="显示图片"){
+		        img.style.display="block";
+				text.innerHTML="隐藏图片";
+		   }else if(text.innerHTML=="隐藏图片"){
+		        img.style.display="none";
+				text.innerHTML="显示图片";
+		   }
+	   }
+   </script>
+ </head>
+    <a href="javascript:openWin()">打开窗口</a>
+	<a href="javascript:displayImg()" id="text">显示图片</a>
+	<img src="F:\壁纸\9bcc09fa513d2697c45e640054fbb2fb4216d8fa.jpg" id="img"/>
+    <div id="mywin">
+	  <div id="title">
+	     我是窗体的标题栏
+		  <span id="close" onclick="closWin()" >
+	  X
+	  </span>
+	  </div>
+	 
+	  <div id="content">
+	   我是一个窗口
+	   </div>
+	</div>
+ </body>
+</html>

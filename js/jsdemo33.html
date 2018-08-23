@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <title>表单验证</title>  
+   <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+   <script>
+    function f(){
+	    document.forms[0].submit();
+	}
+   </script>
+ </head>
+ <body>
+   <form action="jsdemo32.html">
+   <input type="submit" value="提交" onsubmit="return true"/>
+   <input type="button" value="按钮提交" onclick="f()"/>
+   </form>
+ </body>
+</html>

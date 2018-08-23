@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <title>String</title>  
+    <script>
+	     //var array=new Array(10,20,30,40,50);
+		/* var array=new Array(3);
+		 array[0]=1;
+		 array[1]=2;
+		 array[2]=3;
+		 array[3]=4; 
+		 */
+		 function f(a,b){
+		    return a-b;
+		 }
+		 var array=[10,20,30,40,5,8,90];
+		 var a1=["b","f","d","a","c","e"];
+		 document.write(array.length+"<br>");
+		 array.sort(f);//排序数字用函数f来排 字母直接排
+		 for(var i=0;i<array.length;i++){
+		     document.write(array[i]+",");
+		 }
+		 document.write("<br>");
+		 a1.sort();
+		 a1.reverse();//倒序排
+		 for(var i=0;i<a1.length;i++){
+		   document.write(a1[i]+",");
+		 }
+		 document.write("<br>");
+		 //for in 
+		 for(var i in array){
+		   document.write(array[i]+",")
+		 }
+	</script>
+ </head>
+ <body>
+ </body>
+</html>

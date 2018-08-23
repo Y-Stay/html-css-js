@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <title>jsdemo1</title>
+   <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+   <script type="text/javascript">
+      function f(a,b)
+	  {
+		  var s1=prompt("请输入第一个数字：");
+		  var s2=prompt("请输入第二个数字：");
+		  var s=parseInt(s1)+parseInt(s2)
+          document.write("两个数字相加="+s);
+	  }
+	 
+	  function g(){
+	     document.write("hello");
+	  }
+	  //g();
+	  function paramtest(a,b,c){
+	    alert(arguments.length);
+	  }
+	  function paramtest1(){
+	    alert(arguments[0]+arguments[1]);
+	  }
+    </script>
+ </head>
+ <body>
+   <input type="button" value="点击" onclick="paramtest(10,20,30)"/>
+   <input type="button" value="点击" onclick="paramtest(10,20)"/>
+ </body>
+</html>

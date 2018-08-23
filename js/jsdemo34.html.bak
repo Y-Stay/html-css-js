@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <title>表单验证操作</title>  
+   <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+   <script>
+     function checkName(){
+	    var username=document.forms[0].username.value;
+		if(username==""||username.length<1){
+		  alert("用户名不能为空")
+		  return false;
+		}
+		if(username.length<5||username.length>10){
+		   alert("用户名长度必须是5-10之间")
+		   return false;
+		}
+		
+		else{//名字必须是数字字母下划线
+		for(var i=0;i<username.length;i++){
+		   var c=username.toLowerCase().charAt(i);
+		   if(!(c>='a'&&c<='z')&&!(c>='0'&&c<='9')&&c!='_')
+			{
+			  alert("名字不合法");
+			  return false;
+			}
+		}
+		}
+		return true;
+	 }
+     function checkPass(){
+		var passObj=document.forms[0].password;
+	    var password= document.forms[0].password.value;
+		if(password==""||password.length<1){
+		   alert("密码不能为空");
+		   return false;
+		}
+		if(password.length<5||password.length>10){
+		   alert("密码长度必须是5-10之间")
+		   passObj.focus();
+		   passObj.select();
+		   return false;
+		}
+		return true;
+	 }
+	 function checkForm(){
+	    if(checkName()&&checkPass())
+		  return true;
+		  return false;
+	 }
+   </script>
+ </head>
+ <body>
+    <form action="jsdemo32.html" onsubmit="return checkForm()" name="myform">
+	   姓名:<input type="text" name="username"/>
+	   <br>
+	   密码:<input type="password"  name="password"/>
+	   <br>
+	   <input type="submit" value="提交"/>
+	</form>
+ </body>
+</html>
