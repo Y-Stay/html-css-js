@@ -1,0 +1,64 @@
+1.html/css/js
+  html页面的内容
+  css页面的样式（显示效果）
+  js 页面的动态效果
+2.浏览器
+  ie，FireFox，Chrome等
+
+3.创建html文档
+  dtd使用过渡型的
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  命令空间使用
+  xmlns="http://www.w3.org/1999/xhtml"
+  head元素
+     meta元素
+         编码格式
+	 <meta http-equiv="content-type" content="text/heml;charset=GBK"/>
+	 刷新、
+         <meta http-equiv="refresh" content="10"/>
+     title元素
+  body元素
+    1.文本标签   <h1>------<h6>
+      设置颜色  <span style="color:red">
+      转义字符   空格&nbsp; < &lt; > &gt; <= &lt; >= &ge; 
+      换行标签   </br>
+      段落标签   <p>内容<p/> 
+      层级标签    <div align="center">内容</div>  align="center"内容居中
+      照片标签    <img src="E:\照片\宝宝照片源\20150814_183035.jpg"height="270",width="432"/>  
+      超链接标签    <a href="http:\\www.baidu.com"target="_blank">  ——blank为另外弹出页面
+                    <a name="question"></a>
+		    <a href="#question"></a> 可跳转至question标签处
+	    <a href="#"> to top</a>   返回顶部
+     2.列表
+      无序列表    <ul><li></li><li></li>.....</ul>
+      有序列表    <ol><li></li><li></li>.....</ol>  
+     3.表格操作			
+     iframe  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

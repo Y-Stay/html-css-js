@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+   <title>我的第二个表单</title>
+  
+   <meta http-equiv="refresh" content="50"/>
+ </head>
+ <body>
+ <h2>创建管理员</h2>
+     <table width="500">
+	  <form>
+	   <tr>
+	      <td width="70" height="35">姓名：</td><td width="70" height="35"><input type="text"/><span>10个字符以内</span></td>
+	   </tr>
+	   <tr>
+	      <td height="35">密码：</td><td><input type="password"/><span>10个字符以内</span></td>
+	   </tr>
+	   <tr>
+	      <td height="35">性别：</td>
+		            <td colspan="2" height="35"> <input type="radio" checked/ name="sex">女士
+		                             <input type="radio" name="sex">男士
+					</td>
+          
+	   </tr>
+	   <tr>
+	      <td height="35">角色：</td>
+		            <td height="35"> 
+					   <fieldset>
+					      <legend>请选择</legend>
+						  <input type="checkbox"/>超级管理员<br/>
+                          <input type="checkbox"/>账单管理员<br/>
+					   </fieldset>
+					</td>
+					<td height="35"><span>至少选择一个角色</span></td>
+	   </tr>
+	   <tr >
+	   <td height="35">头像：</td>
+	   <td colspan="2" height="35"> <input type="file"/></td>
+	   </tr>
+	
+	   <tr>
+	     <td height="35">状态</td>
+		 <td height="35">
+		     <select>
+			   <option selected>启用</option>
+			   <option>禁用</option>
+			   <option>删除</option>
+			 </select>  
+		 </td>	 
+	   </tr>
+
+	   <tr>
+	     <td height="35"> 描述:
+		 </td>
+		 <td height="35">
+		 <textarea rows="10" cols="30"></textarea>
+		 </td>
+
+	   </tr>
+	   <tr>
+	     <td colspan="2" align="center" height="35">
+		 <input type="submit" value="提交"/>   
+		 <input type="reset" value="重置"/> 
+		 </td>
+	   </tr>
+	   <tr>
+	    <td height="35"></td>
+		<td colspan="2">
+		   <iframe src="htmldemo3.html" width="400" height="300"></iframe>
+		</td>
+	   </tr>
+	 </table>
+	
+  </form>
+ </body>
+</html>
